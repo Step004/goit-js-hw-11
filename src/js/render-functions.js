@@ -36,3 +36,10 @@ export function renderImages(images, list) {
                 </li>`;
     }).join('');
 }
+
+export function clearList(list, gallery) {
+    list.innerHTML = '';
+     if (gallery) {
+       gallery.refresh();
+     }
+}
